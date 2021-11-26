@@ -15,3 +15,5 @@ If medium doesn't allow you to read full article, then open article in incognito
 
 
 ### Results
+
+Accuracy = 81.45%
