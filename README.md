@@ -14,6 +14,22 @@ If medium doesn't allow you to read full article, then open article in incognito
 - [Deep lizard](https://deeplizard.com/learn/video/RznKVRTFkBY)
 
 
+<br/>
+
 ### Results
 
 Accuracy = 81.45%
+
+
+
+<br/>
+
+### Notes
+
+- The model and database is too large to be uploaded to github. 
+
+- This model was trained on 8000 images of cats and dogs split evenly.
+
+- The training set was 2000 images split evenly.
+
+- The base for the model was VGG-16 but it is too large and requires much more memory than my hardware could provide. The current model is a much more simplified version.
