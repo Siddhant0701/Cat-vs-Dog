@@ -14,15 +14,16 @@ If medium doesn't allow you to read full article, then open article in incognito
 - [Deep lizard](https://deeplizard.com/learn/video/RznKVRTFkBY)
 
 
-<br/>
+<br/><br/>
 
 ### Results
 
-Accuracy = 81.45%
+Model 1 Accuracy (Simple) = 81.45%\
+Model 2 Accuracy (VGG-16) = 88.85%
 
 
 
-<br/>
+<br/><br/>
 
 ### Notes
 

@@ -7,9 +7,9 @@ from sklearn.metrics import confusion_matrix, classification_report
 import matplotlib.pyplot as plt
 
 test_dir = r'../dataset/test-set/'
-model_name = 'cat-or-dog-model-vgg.h5'
+model_name = 'cat-or-dog-model-vgg16.h5'
 model_path = r'../models/' + model_name
-IMG_SIZE= (128,128)
+IMG_SIZE= (224,224)
 
 
 model = keras.models.load_model(model_path)
@@ -19,10 +19,10 @@ model_classes={
 }
 
 datagen = ImageDataGenerator(rescale=1./255)
-data = datagen.flow_from_directory(test_dir, target_size=IMG_SIZE, shuffle = False, color_mode='rgb', class_mode='categorical')
+data = datagen.flow_from_directory(test_dir, target_size=IMG_SIZE, shuffle = False, color_mode='rgb', class_mode='categorical', batch_size=1)
 
 
-probabilities= model.predict(data)
+probabilities= model.predict(data, batch_size = 1)
 results = np.argmax(probabilities, axis = 1)
 
 print('Confusion Matrix')

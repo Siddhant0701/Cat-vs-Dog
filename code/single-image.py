@@ -3,9 +3,9 @@ from PIL import Image
 import numpy as np
 import os
 
-filepath = r'../dataset/new-test/dog/catdog.jpg'
-modelpath = r'../models/cat-or-dog-model-vgg.h5'
-IMG_SIZE= (128,128)
+filepath = r'../dataset/new-test/cat/shifaa.jpg'
+modelpath = r'../models/cat-or-dog-model-vgg16.h5'
+IMG_SIZE= (224,224)
 
 model = keras.models.load_model(modelpath)
 results={
