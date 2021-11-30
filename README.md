@@ -32,5 +32,3 @@ Model 2 Accuracy (VGG-16) = 88.85%
 - This model was trained on 8000 images of cats and dogs split evenly.
 
 - The training set was 2000 images split evenly.
-
-- The base for the model was VGG-16 but it is too large and requires much more memory than my hardware could provide. The current model is a much more simplified version.
